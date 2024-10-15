@@ -1,0 +1,142 @@
+div {
+    max-width: 1600px;
+}
+
+.content {
+    margin: 0 auto;
+}
+
+nav {
+    text-align: left; /* Aligns nav to the left */
+}
+
+nav a {
+    text-align: left; /* Aligns the links within the nav to the left */
+    margin-right: 20px; /* Adds some space between the links */
+}
+
+header {
+    width: 100%; /* Makes the header full width */
+    background-color: #7d7e75;
+    position: relative; /* Change to 'fixed' if you want it to stick to the top */
+    padding: 10px 0; /* Adds some vertical padding */
+    margin: 0; /* Ensures no margin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a slight shadow for better visibility */
+}
+
+#hero {
+    position: relative; /* Position for any absolutely positioned elements */
+    text-align: center; /* Centers text within the hero section */
+    padding: 20px; /* Adds padding around the hero content */
+    background-color: #cfd6ea; /* Optional: adds a background color */
+}
+
+#hero-box {
+    position: relative;
+    overflow: hidden; /* Ensures any overflow is hidden */
+}
+
+#hero-img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures no extra space below the image */
+}
+
+#hero-msg h1,
+#hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+}
+
+body {
+    background-color: #cfd6ea;
+}
+
+nav a:hover {
+    background-color: #cfd6ea;
+}
+
+.book,
+.join {
+    background-color: #cfd6ea;
+}
+
+.book:hover,
+.join:hover {
+    background-color: #7d7e75;
+}
+
+#background {
+    background-color: #cfd6ea;
+}
+
+.msg {
+    background-color: #7d7e75;
+}
+
+footer {
+    background-color: #cfd6ea;
+    text-align: left; /* Aligns footer text to the left */
+    padding: 20px; /* Adds padding for better spacing */
+}
+
+nav a {
+    color: #423629;
+}
+
+nav a:hover {
+    color: #423629;
+}
+
+.home-title {
+    color: #423629;
+}
+
+h4 {
+    color: #423629;
+}
+
+.book,
+.join {
+    color: #423629;
+}
+
+.book:hover,
+.join:hover {
+    color: #423629;
+}
+
+.msg h2 {
+    color: #423629;
+}
+
+.msg p {
+    color: #423629;
+}
+
+footer {
+    color: #423629;
+}
+
+footer a {
+    color: #423629;
+}
+
+footer a:hover {
+    color: #423629;
+}
+
+.icon {
+    width: 80px;
+}

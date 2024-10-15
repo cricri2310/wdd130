@@ -1,0 +1,25 @@
+body {
+    font-size: 2em;
+}
+
+main{
+    background-color: lightblue;
+    width: 80;
+}
+
+img{
+    /* width: 50%; */
+    height: 600px;
+}
+
+#green{
+    background-color: lightgreen;
+}
+
+p{
+    color: hotpink;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
+}
