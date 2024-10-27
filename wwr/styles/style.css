@@ -135,6 +135,7 @@ footer a:hover {
 .card-img {
     border: 10px solid #d9c2a3; /* Border for .card-img */
     border-radius: 5px; /* Optional: Adds a slight border-radius for rounded corners */
+    
 }
 
 /* Box-sizing for Images */
