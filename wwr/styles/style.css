@@ -13,16 +13,22 @@ h2 {
     margin: 0; /* Reset margin for h2 */
 }
 
-/* Header Styles */
 header {
-    width: 100%; /* Makes the header full width */
+    width: 100%;
     background-color: #7d7e75;
-    position: relative; /* Change to 'fixed' if you want it to stick to the top */
+    position: relative;
     padding: 10px 0; /* Adds some vertical padding */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a slight shadow for better visibility */
 }
-
-/* Navigation Styles */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
 nav {
     text-align: left; /* Aligns nav to the left */
 }
@@ -37,6 +43,11 @@ nav a {
 nav a:hover {
     background-color: #cfd6ea;
     color: #423629; /* Ensures hover color is set */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Hero Section */
