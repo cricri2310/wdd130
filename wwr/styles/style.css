@@ -193,3 +193,24 @@ nav {
         margin-top: 25px;
     }
 }
+
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Reset default margins */
+}
+
+.page-container {
+    min-height: 100vh; /* Make the container fill the viewport */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+main {
+    flex: 1; /* Take up remaining space between header and footer */
+}
+
+footer {
+    background-color: #6f7364;
+    padding: 25px 50px;
+    text-align: center;
+}
