@@ -1,49 +1,46 @@
-/* Variables */
-:root {
-    --primary-color: #000000;
-    --secondary-color: #6a9775;
-    --accent1-color: #eee0cb;
-    --accent2-color: #bfd7ea;
-  
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif;
-  }
-  
-  /* General Reset */
-  * {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+  /* Variables */
+  :root {
+    --primary-color: #000000;
+    --secondary-color: #6a9775;
+    --accent1-color: #eee0cb;
+    --accent2-color: #bfd7ea;
+    --heading-font: "IM Fell French Canon SC", serif;
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  }
+  
   /* Body Styling */
   body {
     font-family: var(--paragraph-font);
+    background-color: var(--accent2-color);
     color: var(--primary-color);
-    background-color: var(--accent1-color);
-  }
-  
-  /* Content Container */
-  #content {
-    display: grid;
-    grid-template-rows: auto auto 1fr auto; /* Header, Hero, Main, Footer */
-    grid-template-columns: 1fr;
-    gap: 20px;
-    width: 90%;
-    margin: 0 auto;
+    line-height: 1.6;
   }
   
   /* Header Styling */
   header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: var(--secondary-color);
     padding: 10px 20px;
   }
   
-  header #logo_link img {
+  /* Logo Styling */
+  #logo_link img {
     height: 60px;
+    margin-right: 15px;
+  }
+  
+  /* Navigation Styling */
+  nav {
+    display: flex;
+    gap: 20px;
   }
   
   nav a {
@@ -51,7 +48,6 @@
     text-decoration: none;
     font-family: var(--heading-font);
     font-size: 1.2rem;
-    margin-left: 15px;
   }
   
   nav a:hover {
@@ -59,63 +55,68 @@
   }
   
   /* Hero Section */
-  main .hero {
-    text-align: center;
-    padding: 20px 0;
+  .picss {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url("images/machu-picchu-llamas.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  main .hero img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  main .hero h1 {
+  .picss h2 {
     font-family: var(--heading-font);
     font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-top: 10px;
+    color: var(--accent1-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
   }
   
-  /* Image Section */
+  /* Grid for Images */
   #pics {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  #pics .picss {
+  #pics .image-container {
     text-align: center;
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  #pics .picss img {
+  #pics .image-container img {
     max-width: 100%;
+    border-radius: 8px;
     height: auto;
-    border-radius: 5px;
   }
   
-  #pics .picss a {
-    display: block;
-    margin-top: 10px;
-    font-family: var(--paragraph-font);
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  #pics .picss a:hover {
+  #pics .image-container h3 {
+    font-family: var(--heading-font);
+    margin: 10px 0;
     color: var(--secondary-color);
   }
   
-  /* Footer */
+  #pics .image-container p {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+  }
+  
+  /* Footer Styling */
   footer {
     text-align: center;
     background-color: var(--secondary-color);
-    padding: 10px 0;
     color: var(--accent1-color);
+    padding: 15px 0;
     font-family: var(--paragraph-font);
   }
   
@@ -125,35 +126,6 @@
   }
   
   footer a:hover {
-    text-decoration: underline;
-  }
-
-  /* Header Styling */
-header {
-    display: flex;
-    align-items: center;
-    background-color: var(--secondary-color);
-    padding: 10px 20px;
-  }
-  
-  header #logo_link img {
-    height: 60px;
-    margin-right: 15px; /* Adds space between the logo and the navigation links */
-  }
-  
-  nav {
-    display: flex;
-    gap: 15px; /* Adds space between the navigation links */
-  }
-  
-  nav a {
-    color: var(--accent1-color);
-    text-decoration: none;
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
-  }
-  
-  nav a:hover {
     text-decoration: underline;
   }
   
