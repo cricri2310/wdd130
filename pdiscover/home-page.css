@@ -11,8 +11,8 @@
     --secondary-color: #6a9775;
     --accent1-color: #eee0cb;
     --accent2-color: #bfd7ea;
-    --heading-font: "IM Fell French Canon SC", serif;
-    --paragraph-font: Lato, Helvetica, sans-serif;
+    --heading-font: "Montserrat", sans-serif;
+    --paragraph-font: "Montserrat", Helvetica, sans-serif;
   }
   
   /* Body Styling */
