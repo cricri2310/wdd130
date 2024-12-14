@@ -257,6 +257,35 @@
   margin-bottom: 10px; /* Add space between image and text */
 }
 
+body {
+  font-family: var(--paragraph-font);
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+  margin: 0; /* Ensures no unexpected gaps around the body */
+  padding: 0 20px; /* Adds white space on the sides */
+}
+
+/* General Container Styling */
+.container, .food-container {
+  margin: 0 auto; /* Centers content horizontally */
+  padding: 0 20px; /* Adds consistent white space inside */
+  max-width: 1200px; /* Ensures a readable line length */
+}
+
+.text-box {
+  background-color: var(--accent1-color); /* Light background for the box */
+  color: var(--primary-color); /* Text color */
+  padding: 20px; /* Space inside the box */
+  border: 2px solid var(--secondary-color); /* Border for definition */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  max-width: 1200px; /* Increased width for a wider box */
+  margin: 20px auto; /* Center the box and add vertical spacing */
+  font-family: var(--paragraph-font); /* Apply paragraph font */
+  line-height: 1.8; /* Improve text readability */
+}
+
 
 
   
