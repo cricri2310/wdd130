@@ -1,278 +1,119 @@
-/* Main Grid */
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-}
-
-.card-img, .mountains {
-    width: 100%;
-}
-
-.rivers-card {
-    grid-column: 2/4;
-    grid-row: 2/3;
-}
-
-.camping-card {
-    grid-column: 5/7;
-    grid-row: 2/3;
-}
-
-.rapids-card {
-    grid-column: 8/10;
-    grid-row: 2/3;
-}
-
-#background {
-    grid-column: 1/11;
-    grid-row: 4/9;
-}
-
-.mountains {
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #6f7364;
-}
-
-.msg {
-    background-color: #6f7364;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
-}
-
-/* Footer Flexbox */
-footer {
-    background-color: #6f7364;
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
+/* General Styles */
 body {
     background-color: #cfd6ea;
-    font-family: 'Roboto', Arial, sans-serif; /* Body font */
-    font-size: 22px; /* Default font size */
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    margin: 0; /* Reset margin for h2 */
-}
-
+/* Header Styles */
 header {
     width: 100%;
     background-color: #7d7e75;
-    position: relative;
-    padding: 10px 0; /* Adds some vertical padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a slight shadow for better visibility */
+    padding: 10px 20px; /* Added padding for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns everything to the left */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    gap: 20px; /* Adds space between the logo and navigation */
 }
-header {
-    display: grid;
-    grid-template-columns: 150px auto;
-}
+
 #logo_link {
-    padding-top: 5px;
-    justify-self: center;
-    align-self: center;
+    display: flex; /* Ensures logo alignment with nav */
+    align-items: center;
 }
+
+.logo {
+    height: 100px; /* Adjust logo size */
+}
+
 nav {
-    text-align: left; /* Aligns nav to the left */
+    display: flex;
+    gap: 30px; /* Space between navigation items */
 }
 
 nav a {
-    text-align: left; /* Aligns the links within the nav to the left */
-    margin-right: 20px; /* Adds some space between the links */
-    color: #423629; /* Default color for nav links */
-    padding: 35px; /* Padding for nav links */
+    color: #423629;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 0.9em; /* Slightly smaller font */
 }
 
 nav a:hover {
     background-color: #cfd6ea;
-    color: #423629; /* Ensures hover color is set */
+    color: #423629;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-}
 
 /* Hero Section */
 #hero {
-    position: relative; /* Position for any absolutely positioned elements */
-    text-align: center; /* Centers text within the hero section */
-    padding: 20px; /* Adds padding around the hero content */
-    background-color: #cfd6ea; /* Background color */
-}
-
-#hero-box {
-    position: relative;
-    overflow: hidden; /* Ensures any overflow is hidden */
+    text-align: center;
+    background-color: #cfd6ea;
 }
 
 #hero-img {
-    width: 100%; /* Makes the image responsive */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Ensures no extra space below the image */
+    width: 100%;
+    height: auto;
 }
 
-/* Title and Message Styles */
-#hero-msg h1,
-#hero-msg h4 {
-    text-align: center;
-    color: #423629; /* Text color */
+/* Main Content */
+.home-grid {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.home-title {
-    color: #423629; /* Home title color */
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif; /* Headline font */
-    font-size: 2em; /* Font size for home title */
-}
-
-.msg {
-    background-color: #7d7e75;
-    line-height: 1.5em; /* Line height for .msg */
-    padding: 35px; /* Padding for .msg */
-}
-
-.msg h2 {
-    color: #423629; /* Color for .msg h2 */
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif; /* Headline font */
-}
-
-.msg p {
-    color: #423629; /* Color for paragraph in .msg */
-    padding-bottom: 15px; /* Padding for paragraph */
-    font-size: .8em; /* Font size for paragraph */
-}
-
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-    #hero {
-        margin-top: 0;
-    }
-    #hero-msg {
-        margin-top: 0;
-    }
-    #hero-msg h4 {
-        display: none;
-    }
-    #hero-msg h1 {
-        color: #6f7364;
-    }
-    .home-title {
-        font-size: 25px;
-    }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
-    }
-    #background {
-        display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-    footer {
-        margin-top: 25px;
-    }
-}
-
-html, body {
-    height: 100%; /* Ensure full height */
-    margin: 0; /* Reset default margins */
-}
-
-.page-container {
-    min-height: 100vh; /* Make the container fill the viewport */
+/* Adventure Card Styles */
+.adventure-card {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px; /* Adds spacing between cards */
+    border-radius: 8px; /* Adds rounded corners */
 }
 
-main {
-    flex: 1; /* Take up remaining space between header and footer */
+.adventure-card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
 }
 
+.adventure-text {
+    max-width: 60%;
+    text-align: left;
+}
+
+.adventure-text h2 {
+    margin-top: 0;
+    color: #423629;
+}
+
+.adventure-text p {
+    color: #555555;
+}
+
+/* Footer */
 footer {
     background-color: #6f7364;
-    padding: 25px 50px;
+    color: white;
     text-align: center;
+    padding: 20px 10px;
 }
 
-body {
-    /* Center the form on the page */
-    text-align: center;
-  }
-  
-  form {
-    display: inline-block;
-    /* Form outline */
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-  }
-  
-  p + p {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Uniform size & alignment */
-    display: inline-block;
-    min-width: 90px;
-    text-align: right;
-  }
-  
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, text areas have a monospace font */
-    font: 1em sans-serif;
-    /* Uniform text field size */
-    width: 300px;
-    box-sizing: border-box;
-    /* Match form field borders */
-    border: 1px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus {
-    /* Set the outline width and style */
-    outline-style: solid;
-    /* To give a little highlight on active elements */
-    outline-color: #000;
-  }
-  
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-    /* Provide space to type some text */
-    height: 5em;
-  }
-  
-  .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 0.5em;
-  }
+footer .footer-links,
+footer .social {
+    margin-top: 10px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
