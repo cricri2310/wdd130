@@ -1,140 +1,142 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Variables */
-  :root {
-    --primary-color: #000000;
-    --secondary-color: #6a9775;
-    --accent1-color: #eee0cb;
-    --accent2-color: #bfd7ea;
-    --heading-font: "Montserrat", sans-serif;
-    --paragraph-font: "Montserrat", Helvetica, sans-serif;
-  }
-  
-  /* Body Styling */
-  body {
-    font-family: var(--paragraph-font);
-    background-color: var(--accent2-color);
-    color: var(--primary-color);
-    line-height: 1.6;
-  }
-  
-  /* Header Styling */
-  header {
-    display: flex;
-    align-items: center;
-    background-color: var(--secondary-color);
-    padding: 10px 20px;
-  }
-  
-  /* Logo Styling */
-  #logo_link img {
-    height: 60px;
-    margin-right: 15px;
-  }
-  
-  /* Navigation Styling */
-  nav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav a {
-    color: var(--accent1-color);
-    text-decoration: none;
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Hero Section */
-  .picss {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background-image: url("images/machu-picchu-llamas.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .picss h2 {
-    font-family: var(--heading-font);
-    font-size: 2.5rem;
-    color: var(--accent1-color);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 8px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .picss img{
-    height: 300px;
-    width: auto;
-  }
-  
-  /* Grid for Images */
-  #pics {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  #pics .image-container {
-    text-align: center;
-    background-color: var(--accent1-color);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  #pics .image-container img {
-    max-width: 100%;
-    border-radius: 8px;
-    height: auto;
-  }
-  
-  #pics .image-container h3 {
-    font-family: var(--heading-font);
-    margin: 10px 0;
-    color: var(--secondary-color);
-  }
-  
-  #pics .image-container p {
-    font-family: var(--paragraph-font);
-    color: var(--primary-color);
-  }
-  
-  /* Footer Styling */
-  footer {
-    text-align: center;
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
-    padding: 15px 0;
-    font-family: var(--paragraph-font);
-  }
-  
-  footer a {
-    color: var(--accent1-color);
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
+/* Variables */
+:root {
+  --primary-color: #000000;
+  --secondary-color: #6a9775;
+  --accent1-color: #eee0cb;
+  --accent2-color: #bfd7ea;
+  --heading-font: "Montserrat", sans-serif;
+  --paragraph-font: "Montserrat", Helvetica, sans-serif;
+}
 
-  * {box-sizing:border-box}
+/* Body Styling */
+body {
+  font-family: var(--paragraph-font);
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+  margin: 0; /* Ensures no unexpected gaps around the body */
+  padding: 0 20px; /* Adds white space on the sides */
+  padding-bottom: 40px; /* Adds space to ensure text doesn't touch footer */
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+}
+
+/* Logo Styling */
+#logo_link img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+/* Navigation Styling */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--accent1-color);
+  text-decoration: none;
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.picss {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("images/machu-picchu-llamas.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picss h2 {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  color: var(--accent1-color);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.picss img {
+  height: 300px;
+  width: auto;
+}
+
+/* Grid for Images */
+#pics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#pics .image-container {
+  text-align: center;
+  background-color: var(--accent1-color);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#pics .image-container img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+#pics .image-container h3 {
+  font-family: var(--heading-font);
+  margin: 10px 0;
+  color: var(--secondary-color);
+}
+
+#pics .image-container p {
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+  padding: 15px 0;
+  font-family: var(--paragraph-font);
+  margin-top: 40px; /* Add margin to push footer below content */
+}
+
+footer a {
+  color: var(--accent1-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -222,6 +224,7 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
 /* Center the text in <h3> */
 .food-container h3 {
   text-align: center;
@@ -257,15 +260,6 @@
   margin-bottom: 10px; /* Add space between image and text */
 }
 
-body {
-  font-family: var(--paragraph-font);
-  background-color: var(--accent2-color);
-  color: var(--primary-color);
-  line-height: 1.6;
-  margin: 0; /* Ensures no unexpected gaps around the body */
-  padding: 0 20px; /* Adds white space on the sides */
-}
-
 /* General Container Styling */
 .container, .food-container {
   margin: 0 auto; /* Centers content horizontally */
@@ -273,6 +267,7 @@ body {
   max-width: 1200px; /* Ensures a readable line length */
 }
 
+/* Text Box Styling */
 .text-box {
   background-color: var(--accent1-color); /* Light background for the box */
   color: var(--primary-color); /* Text color */
@@ -285,7 +280,3 @@ body {
   font-family: var(--paragraph-font); /* Apply paragraph font */
   line-height: 1.8; /* Improve text readability */
 }
-
-
-
-  
